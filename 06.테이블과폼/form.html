@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입폼</title>
+</head>
+<body>
+    <form action="submit-registration" method="post">
+        <h2>Registration Form</h2>
+        <label for="name">이름: </label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">이메일: </label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">비밀번호: </label>
+        <input type="password" id="password" name="password" required minlength="8"><br><br>
+        <label>성별 :</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">남성</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">여성</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">기타</label><br><br>
+        <label for="job">직업:</label>
+        <select id="job" name="job">
+            <option value="student">학생</option>
+            <option value="teacher">선생님</option>
+            <option value="engineer">엔지니어</option>
+            <option value="other">기타</option>
+        </select><br><br>
+        <label for="hobby">취미:</label>
+        <input list="hobbies" id="hobby" name="hobby">
+        <datalist id="hobbies">
+            <option value="코딩">
+            <option value="음악">
+            <option value="등산">
+            <option value="요리">
+            <option value="독서">
+            <option value="독심술">    
+        </datalist><br><br>
+        <label>뉴스레터 구독:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+        <label for="newsletter">구독하기</label><br><br>
+        <label for="introduction">자기소개 : </label>
+        <textarea id="introduction" name="introduction" rows="5" cols="30"></textarea><br><br>
+        <input type="submit" value="등록하기">
+    </form>
+</body>
+</html>
