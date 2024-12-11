@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 속성 선택자 예시</title>
+    <style>
+        [data-example] {
+            font-style: italic;
+        }
+        [type="text"] {
+            border: 2px solid blue;
+        }
+        [class~="example"] {
+            background-color: yellow;
+        }
+        [href^="https://"] {
+            color: green
+        }
+        [href$=".com"] {
+            font-weight: bold;
+        }
+        [class*="text"]{
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <div data-example="true">속성 선택자 예시</div>
+    <input type="text" placeholder="텍스트입력">
+    <input type="password" placeholder="비밀번호입력">
+    <a href="https://google.com">외부 링크</a>
+    <div class="example">클래스에 'text'를 포함하는 요소</div>
+    <div class="example-class text-example">클래스에 'text'를 포함하는 요소</div>
+</body>
+</html>

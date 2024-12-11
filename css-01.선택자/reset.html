@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS all 속성 예시</title>
+    <style>
+        blockquote {
+            color: green;
+            font-style: italic;
+            border-left: 3px solid grey;
+            padding-left: 10px;
+        }
+
+        .reset-style {
+            all: unset;
+        }
+    </style>
+</head>
+<body>
+    <blockquote>
+        "이것은 스타일이 적용된 첫 번째 인용문 입니다."
+    </blockquote>
+    <blockquote class="reset-style">
+        "이것은 all 속성을 사용하여 스타일을 초기화한 두 번째 인용문 입니다."
+    </blockquote>
+</body>
+</html>

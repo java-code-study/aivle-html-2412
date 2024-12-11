@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 특수 값 예시</title>
+    <style>
+        .parent {
+            color: blue;
+        }
+        .child-inherit {
+            color: inherit;
+        }
+        .child-initial {
+            color: red;
+            color: initial;
+        }
+        .child-unset {
+            color: red;
+            color: unset;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        부모 요소
+        <p class="child-inherit">부모로부터 상속</p>
+        <p class="child-initial">기본값</p>
+        <p class="child-unset">상속받거나 기본값</p>
+    </div>
+</body>
+</html>
