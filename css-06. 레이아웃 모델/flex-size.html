@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Size 예제</title>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 30px auto;
+        }
+        .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        .flex-item-1 {
+            flex: 1; /* grow : 1, shrik: 1, basis: auto */
+        }
+        .flex-item-2 {
+            flex: 2; /* grow: 2, shrik : 1, basis: auto */
+        }
+        .flex-item-3 {
+            flex: 1 200px; /* grow : 1, shrik : 1 , basis : 200px */
+        }
+        .flex-item-4 {
+            flex: 3 3 300px; /* grow : 3, shrik : 3, basis : 300px */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item flex-item-1">Flex 1</div>
+        <div class="flex-item flex-item-2">Flex 2</div>
+        <div class="flex-item flex-item-3">Flex 1 200px</div>
+        <div class="flex-item flex-item-4">Flex 1 1 300px</div>
+    </div>
+</body>
+</html>

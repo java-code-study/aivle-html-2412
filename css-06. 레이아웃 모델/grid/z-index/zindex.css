@@ -1,0 +1,48 @@
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    min-width: 600px;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 100px 300px 100px 100px;
+    grid-template-rows: 50px 200px 25px 50px;
+    justify-self: center;
+}
+
+header {
+    grid-area: 1/1/1/5;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+nav {
+    grid-area: 2/1/5/1;
+    text-align: center;
+    background-color: indigo;
+    color: white;
+}
+
+main {
+    grid-area: 2/2/5/4;
+    text-align: center;
+    background-color: lightseagreen;
+    color: white;
+}
+
+aside {
+    grid-area: 2/4/5/4;
+    text-align: center;
+    background-color: deeppink;
+    color: white;
+}
+
+footer {
+    grid-area: 3/3/3/5;
+    text-align: center;
+    background-color: darkslategrey;
+    color: white;
+    z-index: 1;
+}

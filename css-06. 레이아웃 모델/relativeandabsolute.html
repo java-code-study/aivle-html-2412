@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative & Absolute</title>
+    <style>
+        .relative-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background-color: #f0f0f0;
+            text-align: center;
+            line-height: 300px;
+            margin-bottom: 20px;
+        }
+        .relative-box {
+            position: relative;
+            top: -20px;
+            left: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            display: inline-block;
+        }
+        .absolute-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            text-align: center;
+            line-height: 300px;
+        }
+        .absolute-box {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #FF5722;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative-container">
+        Relative Container 
+        <div class="relative-box">Relative Box</div>
+    </div>
+    <div class="absolute-container">
+        Absolute Container 
+        <div class="absolute-box">Absolute Box</div>
+    </div>
+</body>
+</html>

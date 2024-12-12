@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template-columns: 100px 6fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+header {
+    grid-area: 1/1/1/4;
+    text-align: center;
+    background-color: lightpink;
+}
+
+nav {
+    grid-area: 2/1/2/2;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+main {
+    grid-area: 2/2/2/3;
+    text-align: center;
+    background-color: lightyellow;
+}
+
+aside {
+    grid-area: 2/3/2/4;
+    text-align: center;
+    background-color: lightblue;
+}
+
+footer {
+    grid-area: 3/2/3/4;
+    text-align: center;
+    background-color: lightgreen;
+}

@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template-columns: 100px 400px 100px;
+    grid-template-rows: 50px 400px 50px;
+}
+
+header {
+    grid-area: 1/1/1/4; /* 시작 row, 시작 column, 끝 row, 끝 column */
+    background-color: lightsalmon;
+    text-align: center;
+}
+
+nav {
+    grid-area: 2/1/2/2;
+    background-color: lightblue;
+    text-align: center;
+}
+
+main {
+    grid-area: 2/2/2/3;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+aside {
+    grid-area: 2/3/2/4;
+    background-color: lightpink;
+    text-align: center;
+}
+
+footer {
+    grid-area: 3/2/3/4;
+    text-align: center;
+    background-color: lightskyblue;
+}

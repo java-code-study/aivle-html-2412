@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    grid-template-columns: 100px 400px 100px;
+    grid-template-rows: 50px 400px 50px;
+    grid-template-areas: "hd hd hd"
+                         "nv mn as"
+                         ". ft ft";
+}
+
+header {
+    grid-area: hd;
+    background-color: lightpink;
+    text-align: center;
+}
+
+nav {
+    grid-area: nv;
+    background-color: lightblue;
+    text-align: center;
+}
+
+main {
+    grid-area: mn;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+aside {
+    grid-area: as;
+    background-color: lightgray;
+    text-align: center;
+}
+
+footer {
+    grid-area: ft;
+    background-color: lightpink;
+    text-align: center;
+}

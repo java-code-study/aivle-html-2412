@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고급 멀티 레이아웃 예제</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule: 2px dashed #ccc;
+            padding: 20px;
+            background-color: white;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .container h2 {
+            color: #333;
+        }
+        .card {
+            break-inside: avoid;
+            page-break-inside: avoid;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .card p {
+            margin: 0;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>멀티 레이아웃 신문 스타일</h2>
+    <div class="card">
+        <img src="https://via.placeholder.com/600x400" alt="샘플 이미지">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="card">
+        <p>Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate.</p>
+    </div>
+    <div class="card">
+        <p>Duis felis orci, pulvinar id metus ut, rutrum luctus orci.</p>
+    </div>
+    <!-- 여러 개의 카드를 추가하여 내용을 채울 수 있습니다 -->
+</div>
+
+</body>
+</html>

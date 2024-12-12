@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Advanced Example</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row; /* 주 축을 가로(row) 방향으로 설정 */
+            justify-content: space-around; /* 주 축에서 아이템들 간의 공간 균등 배분 */
+            align-items: center; /* 교차 축에서 아이템들을 중앙에 정렬 */
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 5px;
+            flex: 1; /* 아이템들이 공간을 동등하게 차지하도록 설정 */
+        }
+
+        /* 예시를 위한 추가 스타일 */
+        .flex-direction-column {
+            flex-direction: column; /* 주 축을 세로(column) 방향으로 변경 */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <!-- 주 축 변경 예시: 세로 방향 -->
+    <div class="flex-container flex-direction-column">
+        <div class="flex-item">Column Item 1</div>
+        <div class="flex-item">Column Item 2</div>
+        <div class="flex-item">Column Item 3</div>
+        </div>
+
+</body>
+</html>

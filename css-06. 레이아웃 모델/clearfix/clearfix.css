@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+.content {
+    width: 100%;
+    background-color: skyblue;
+}
+
+.content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box {
+    width: 33%;
+    float: left;
+    padding: 20px 0;
+}
+
+.box img {
+    width: 135px;
+    float: left;
+}
+
+.small-box {
+    float: left;
+    padding-left: 10px;
+    margin: 20px 0 10px 0;
+}

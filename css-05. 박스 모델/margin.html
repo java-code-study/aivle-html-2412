@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Margin 비교 예제</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border: 2px solid black;
+            display: inline-block; /* 박스를 옆으로 배열하기 위해 */
+        }
+
+        .with-large-margin {
+            margin: 50px; /* 큰 여백 적용 */
+        }
+
+        .without-margin {
+            margin: 0; /* 여백 없음 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box with-large-margin">큰 여백</div>
+    <div class="box without-margin">여백 없음</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    display: grid;
+    grid-template-columns:  100%;
+    min-width: 600px;
+}
+
+.wrap {
+    display: grid;
+    /* grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px; */
+    grid-template-columns: repeat(12, 50px);
+    /* grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px; */
+    grid-template-rows: repeat(12, 50px);
+    justify-self: center;
+}
+
+header {
+    grid-area: 1/1/1/13;
+    text-align: center;
+    background-color: lightblue;
+}
+
+nav {
+    grid-area: 2/1/12/3;
+    background-color: lightpink;
+    text-align: center;
+}
+
+main {
+    grid-area: 2/3/12/11;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+aside {
+    grid-area: 2/11/12/13;
+    text-align: center;
+    background-color: lightyellow;
+}
+
+footer {
+    grid-area: 12/1/12/13;
+}
+
+.control {
+    grid-area: 10/8/10/10;
+    background-color: #777;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    opacity: .8;
+    z-index: 1;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Normal Flow Example</title>
+    <style>
+        body {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        p {
+            background: rgba(100, 150, 200, 0.5);
+            border: 2px solid navy;
+            padding: 15px;
+            margin: 15px;
+        }
+
+        span {
+            background: lightyellow;
+            border: 1px dashed grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>웹 페이지의 기본 구조</h1>
+
+    <p>
+      저는 블록 레벨 요소로, 다른 블록 레벨 요소들은 나 뒤에 새 줄에서 시작합니다.
+    </p>
+
+    <p>
+      기본적으로 우리는 부모 요소의 너비를 전체적으로 사용하며, 우리의 높이는 내용에 따라 결정됩니다. 우리의 총 크기는 내용, 패딩, 테두리, 그리고 여백을 포함합니다.
+    </p>
+
+    <p>
+      서로 인접한 요소들 사이의 여백은 마진 축소로 인해 하나의 여백으로 합쳐집니다. 따라서 두 개의 여백이 아니라 하나의 큰 여백이 형성됩니다.
+    </p>
+
+    <p>
+      인라인 요소들은 <span>이렇게</span>와 <span>저렇게</span> 같은 줄에 배치되며, 충분한 공간이 있을 경우 주변 텍스트와 나란히 표시됩니다. 넘치는 내용은 <span>새 줄로 넘어갈 수 있습니다.</span> 
+    </p>
+</body>
+</html>

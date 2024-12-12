@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #343a40;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (min-width: 600px) {
+            .content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (min-width: 900px) {
+            .content {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Responsive Web Design Example</header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="card">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+            <h2>Card Title 1</h2>
+            <p>This is a sample text for card 1. Responsive web design adjusts content based on screen size.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+            <h2>Card Title 2</h2>
+            <p>This is a sample text for card 2. Images and layouts fluidly expand as the viewport grows.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+            <h2>Card Title 3</h2>
+            <p>This is a sample text for card 3. Media queries help in adjusting the design for different screens.</p>
+        </div>
+    </div>
+</body>
+</html>
